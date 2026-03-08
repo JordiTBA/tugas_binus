@@ -1,5 +1,5 @@
 import java.util.Locale;
-
+//hasil https://github.com/JordiTBA/tugas_binus/blob/main/image_2026-03-08_064631892.png
 class Mahasiswa {
     String nama;
     String nim;
