@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Locale;
-
+//hasil https://github.com/JordiTBA/tugas_binus/blob/main/image_2026-03-08_064523878.png
 class Mahasiswa {
     String nama;
     String nim;
