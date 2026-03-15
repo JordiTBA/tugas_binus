@@ -1,0 +1,21 @@
+from sklearn.datasets import load_breast_cancer
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+data = load_breast_cancer()
+df = pd.DataFrame(data.data, columns=data.feature_names)
+df['target'] = data.target
+
+df['diagnosis'] = df['target'].map({0: 'Malignant', 1: 'Benign'})
+
+print(df.head())
+
+
+print(df.isnull().sum())
+
+print(df.describe())
+
+filtered_df = df[(df['diagnosis'] == 'Malignant') & (df['mean radius'] > 20)]
+print(filtered_df[['mean radius', 'mean texture', 'diagnosis']].head())
